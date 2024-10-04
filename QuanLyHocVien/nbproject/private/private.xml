@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/ADMIN/Downloads/CONG_NGHE_PHAN_MEM%20(2)%20(2)/QuanLyHocVien/src/com/teamvietdev/qlhv/view/TaoTKJPanel.java</file>
+            <file>file:/C:/Users/ADMIN/Downloads/CONG_NGHE_PHAN_MEM%20(2)%20(2)/QuanLyHocVien/src/com/teamvietdev/qlhv/service/HocVienServiceImpl.java</file>
+            <file>file:/C:/Users/ADMIN/Downloads/CONG_NGHE_PHAN_MEM%20(2)%20(2)/QuanLyHocVien/src/com/teamvietdev/qlhv/controller/QuanLyHocVienController.java</file>
+            <file>file:/C:/Users/ADMIN/Downloads/CONG_NGHE_PHAN_MEM%20(2)%20(2)/QuanLyHocVien/src/com/teamvietdev/qlhv/service/HocVienService.java</file>
+            <file>file:/C:/Users/ADMIN/Downloads/CONG_NGHE_PHAN_MEM%20(2)%20(2)/QuanLyHocVien/src/com/teamvietdev/qlhv/view/TrangChuJPanel.java</file>
+            <file>file:/C:/Users/ADMIN/Downloads/CONG_NGHE_PHAN_MEM%20(2)%20(2)/QuanLyHocVien/src/com/teamvietdev/qlhv/bean/DanhMucBean.java</file>
+            <file>file:/C:/Users/ADMIN/Downloads/CONG_NGHE_PHAN_MEM%20(2)%20(2)/QuanLyHocVien/src/com/teamvietdev/qlhv/dao/HocVienDAO.java</file>
+            <file>file:/C:/Users/ADMIN/Downloads/CONG_NGHE_PHAN_MEM%20(2)%20(2)/QuanLyHocVien/src/com/teamvietdev/qlhv/dao/TaoTaiKhoanDAOImpl.java</file>
+            <file>file:/C:/Users/ADMIN/Downloads/CONG_NGHE_PHAN_MEM%20(2)%20(2)/QuanLyHocVien/src/com/teamvietdev/qlhv/service/TaoTaiKhoanService.java</file>
+            <file>file:/C:/Users/ADMIN/Downloads/CONG_NGHE_PHAN_MEM%20(2)%20(2)/QuanLyHocVien/src/com/teamvietdev/qlhv/dao/DBConnect.java</file>
+            <file>file:/C:/Users/ADMIN/Downloads/CONG_NGHE_PHAN_MEM%20(2)%20(2)/QuanLyHocVien/src/com/teamvietdev/qlhv/controller/QuanLyTaiKhoanController.java</file>
+            <file>file:/C:/Users/ADMIN/Downloads/CONG_NGHE_PHAN_MEM%20(2)%20(2)/QuanLyHocVien/src/com/teamvietdev/qlhv/view/HocVienJFrame.java</file>
+            <file>file:/C:/Users/ADMIN/Downloads/CONG_NGHE_PHAN_MEM%20(2)%20(2)/QuanLyHocVien/src/com/teamvietdev/qlhv/controller/TaoTaiKhoanController.java</file>
+            <file>file:/C:/Users/ADMIN/Downloads/CONG_NGHE_PHAN_MEM%20(2)%20(2)/QuanLyHocVien/src/com/teamvietdev/qlhv/controller/HocVienController.java</file>
+            <file>file:/C:/Users/ADMIN/Downloads/CONG_NGHE_PHAN_MEM%20(2)%20(2)/QuanLyHocVien/src/com/teamvietdev/qlhv/service/ThongKeService.java</file>
+            <file>file:/C:/Users/ADMIN/Downloads/CONG_NGHE_PHAN_MEM%20(2)%20(2)/QuanLyHocVien/src/com/teamvietdev/qlhv/dao/TaiKhoanDAO.java</file>
+            <file>file:/C:/Users/ADMIN/Downloads/CONG_NGHE_PHAN_MEM%20(2)%20(2)/QuanLyHocVien/src/com/teamvietdev/qlhv/dao/TaiKhoanDAOImpl.java</file>
+            <file>file:/C:/Users/ADMIN/Downloads/CONG_NGHE_PHAN_MEM%20(2)%20(2)/QuanLyHocVien/src/com/teamvietdev/qlhv/utility/ClassTableModel.java</file>
+            <file>file:/C:/Users/ADMIN/Downloads/CONG_NGHE_PHAN_MEM%20(2)%20(2)/QuanLyHocVien/src/com/teamvietdev/qlhv/service/TaiKhoanServiceImpl.java</file>
+            <file>file:/C:/Users/ADMIN/Downloads/CONG_NGHE_PHAN_MEM%20(2)%20(2)/QuanLyHocVien/src/com/teamvietdev/qlhv/service/TaoTaiKhoanServiceImpl.java</file>
+            <file>file:/C:/Users/ADMIN/Downloads/CONG_NGHE_PHAN_MEM%20(2)%20(2)/QuanLyHocVien/src/com/teamvietdev/qlhv/controller/ChuyenManHinhController.java</file>
+            <file>file:/C:/Users/ADMIN/Downloads/CONG_NGHE_PHAN_MEM%20(2)%20(2)/QuanLyHocVien/src/com/teamvietdev/qlhv/bean/KhoaHocBean.java</file>
+            <file>file:/C:/Users/ADMIN/Downloads/CONG_NGHE_PHAN_MEM%20(2)%20(2)/QuanLyHocVien/src/com/teamvietdev/qlhv/view/KhoaHocJPanel.java</file>
+            <file>file:/C:/Users/ADMIN/Downloads/CONG_NGHE_PHAN_MEM%20(2)%20(2)/QuanLyHocVien/src/com/teamvietdev/qlhv/controller/TaiKhoanController.java</file>
+            <file>file:/C:/Users/ADMIN/Downloads/CONG_NGHE_PHAN_MEM%20(2)%20(2)/QuanLyHocVien/src/com/teamvietdev/qlhv/view/HocVienJPanel.java</file>
+            <file>file:/C:/Users/ADMIN/Downloads/CONG_NGHE_PHAN_MEM%20(2)%20(2)/QuanLyHocVien/src/com/teamvietdev/qlhv/view/MainJFrame.java</file>
+            <file>file:/C:/Users/ADMIN/Downloads/CONG_NGHE_PHAN_MEM%20(2)%20(2)/QuanLyHocVien/src/com/teamvietdev/qlhv/model/HocVien.java</file>
+            <file>file:/C:/Users/ADMIN/Downloads/CONG_NGHE_PHAN_MEM%20(2)%20(2)/QuanLyHocVien/src/com/teamvietdev/qlhv/view/DangNhapJDialog.java</file>
+            <file>file:/C:/Users/ADMIN/Downloads/CONG_NGHE_PHAN_MEM%20(2)%20(2)/QuanLyHocVien/src/com/teamvietdev/qlhv/dao/ThongKeDAO.java</file>
+            <file>file:/C:/Users/ADMIN/Downloads/CONG_NGHE_PHAN_MEM%20(2)%20(2)/QuanLyHocVien/src/com/teamvietdev/qlhv/dao/HocVienDAOImpl.java</file>
+            <file>file:/C:/Users/ADMIN/Downloads/CONG_NGHE_PHAN_MEM%20(2)%20(2)/QuanLyHocVien/src/com/teamvietdev/qlhv/dao/TaoTaiKhoanDAO.java</file>
+            <file>file:/C:/Users/ADMIN/Downloads/CONG_NGHE_PHAN_MEM%20(2)%20(2)/QuanLyHocVien/src/com/teamvietdev/qlhv/main/Main.java</file>
+            <file>file:/C:/Users/ADMIN/Downloads/CONG_NGHE_PHAN_MEM%20(2)%20(2)/QuanLyHocVien/src/com/teamvietdev/qlhv/view/TKJFrame.java</file>
+            <file>file:/C:/Users/ADMIN/Downloads/CONG_NGHE_PHAN_MEM%20(2)%20(2)/QuanLyHocVien/src/com/teamvietdev/qlhv/service/TaiKhoanService.java</file>
+            <file>file:/C:/Users/ADMIN/Downloads/CONG_NGHE_PHAN_MEM%20(2)%20(2)/QuanLyHocVien/src/com/teamvietdev/qlhv/model/TaiKhoan.java</file>
+            <file>file:/C:/Users/ADMIN/Downloads/CONG_NGHE_PHAN_MEM%20(2)%20(2)/QuanLyHocVien/src/com/teamvietdev/qlhv/view/BaoLoiJPanel.java</file>
+            <file>file:/C:/Users/ADMIN/Downloads/CONG_NGHE_PHAN_MEM%20(2)%20(2)/QuanLyHocVien/src/com/teamvietdev/qlhv/controller/QuanLyThongKeController.java</file>
+        </group>
+    </open-files>
+</project-private>
