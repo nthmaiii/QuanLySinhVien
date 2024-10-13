@@ -6,11 +6,20 @@ package com.teamvietdev.qlhv.model;
  */
 public class TaiKhoan {
 
+    public void setMa_nguoi_tao_tk(int ma_nguoi_tao_tk) {
+        this.ma_nguoi_tao_tk = ma_nguoi_tao_tk;
+    }
+
+    public int getMa_nguoi_tao_tk() {
+        return ma_nguoi_tao_tk;
+    }
+
     private int ma_tai_khoan;
     private String ten_dang_nhap;
     private String mat_khau;
     private boolean tinh_trang;
     private String ten_tk;
+    private int ma_nguoi_tao_tk;
     public int getMa_tai_khoan() {
         return ma_tai_khoan;
     }
@@ -50,6 +59,8 @@ public class TaiKhoan {
     public void setTinh_trang(boolean tinh_trang) {
         this.tinh_trang = tinh_trang;
     }
+   
+    
     
     @Override
     public String toString() {

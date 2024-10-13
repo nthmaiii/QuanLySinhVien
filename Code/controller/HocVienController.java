@@ -107,7 +107,7 @@ public class HocVienController {
                         }
                     }
                 } catch (Exception ex) {
-                    jlbMsg.setText(ex.toString());
+                    jlbMsg.setText("Có lỗi xảy ra, vui lòng thử lại!");
                 }
             }
 
@@ -139,7 +139,8 @@ public class HocVienController {
     }
 
     private boolean checkNotNull() {
-        return jtfHoTen.getText() != null && !jtfHoTen.getText().equalsIgnoreCase("");
+        return jtfHoTen.getText() != null && !jtfHoTen.getText().equalsIgnoreCase("")&&jtfSoDienThoai.getText() != null && !jtfSoDienThoai.getText().equalsIgnoreCase("")
+                &&jtaDiaChi.getText() != null && !jtaDiaChi.getText().equalsIgnoreCase("");
     }
 
     private boolean showDialog() {

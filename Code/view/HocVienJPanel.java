@@ -11,7 +11,7 @@ public class HocVienJPanel extends javax.swing.JPanel {
     public HocVienJPanel() {
         initComponents();
         // Goi controller xu ly
-        QuanLyHocVienController controller = new QuanLyHocVienController(jpnView, btnAdd,btnDelete, jtfSearch, bntRefresh);
+        QuanLyHocVienController controller = new QuanLyHocVienController(jpnView2, btnAdd,btnDelete, jtfSearch, bntRefresh);
         controller.setDataToTable();
         controller.setEvent();
     }
@@ -27,7 +27,7 @@ public class HocVienJPanel extends javax.swing.JPanel {
 
         jpnRoot = new javax.swing.JPanel();
         jtfSearch = new javax.swing.JTextField();
-        jpnView = new javax.swing.JPanel();
+        jpnView2 = new javax.swing.JPanel();
         btnDelete = new javax.swing.JButton();
         bntRefresh = new javax.swing.JButton();
         btnAdd = new javax.swing.JButton();
@@ -40,33 +40,35 @@ public class HocVienJPanel extends javax.swing.JPanel {
         jtfSearch.setSelectionEnd(11);
         jtfSearch.setSelectionStart(11);
 
-        javax.swing.GroupLayout jpnViewLayout = new javax.swing.GroupLayout(jpnView);
-        jpnView.setLayout(jpnViewLayout);
-        jpnViewLayout.setHorizontalGroup(
-            jpnViewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout jpnView2Layout = new javax.swing.GroupLayout(jpnView2);
+        jpnView2.setLayout(jpnView2Layout);
+        jpnView2Layout.setHorizontalGroup(
+            jpnView2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 0, Short.MAX_VALUE)
         );
-        jpnViewLayout.setVerticalGroup(
-            jpnViewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        jpnView2Layout.setVerticalGroup(
+            jpnView2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 541, Short.MAX_VALUE)
         );
 
         btnDelete.setBackground(new java.awt.Color(255, 51, 51));
         btnDelete.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        btnDelete.setForeground(new java.awt.Color(255, 255, 255));
         btnDelete.setText("Xóa");
         btnDelete.setMaximumSize(new java.awt.Dimension(80, 24));
         btnDelete.setMinimumSize(new java.awt.Dimension(80, 24));
         btnDelete.setPreferredSize(new java.awt.Dimension(75, 17));
 
-        bntRefresh.setBackground(new java.awt.Color(153, 255, 255));
+        bntRefresh.setBackground(new java.awt.Color(51, 102, 255));
         bntRefresh.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        bntRefresh.setForeground(new java.awt.Color(255, 255, 255));
         bntRefresh.setText("Refresh");
         bntRefresh.setPreferredSize(new java.awt.Dimension(75, 17));
 
         btnAdd.setBackground(new java.awt.Color(76, 175, 80));
         btnAdd.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         btnAdd.setForeground(new java.awt.Color(255, 255, 255));
-        btnAdd.setText("+ Thêm mới");
+        btnAdd.setText("Thêm mới");
         btnAdd.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAddActionPerformed(evt);
@@ -80,7 +82,7 @@ public class HocVienJPanel extends javax.swing.JPanel {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jpnRootLayout.createSequentialGroup()
                 .addGap(14, 14, 14)
                 .addGroup(jpnRootLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jpnView, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jpnView2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jpnRootLayout.createSequentialGroup()
                         .addComponent(jtfSearch, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 122, Short.MAX_VALUE)
@@ -103,7 +105,7 @@ public class HocVienJPanel extends javax.swing.JPanel {
                             .addComponent(btnDelete, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addComponent(btnAdd, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jpnView, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jpnView2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -133,7 +135,7 @@ public class HocVienJPanel extends javax.swing.JPanel {
     private javax.swing.JButton btnAdd;
     private javax.swing.JButton btnDelete;
     private javax.swing.JPanel jpnRoot;
-    private javax.swing.JPanel jpnView;
+    private javax.swing.JPanel jpnView2;
     private javax.swing.JTextField jtfSearch;
     // End of variables declaration//GEN-END:variables
 }

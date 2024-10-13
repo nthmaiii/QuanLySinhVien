@@ -6,6 +6,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
+import javax.swing.JOptionPane;
 
 //Trien khai trong thiet ke va phat trien phan mem
 //Tach biet giao dien va trien khai
@@ -38,7 +39,7 @@ public class HocVienDAOImpl implements HocVienDAO {
                 hocVien.setNgay_sinh(rs.getDate("ngay_sinh"));
                 hocVien.setGioi_tinh(rs.getBoolean("gioi_tinh"));
                 hocVien.setTinh_trang(rs.getBoolean("tinh_trang"));
-                hocVien.setMa_nguoi_tao_tk(rs.getInt("ma_nguoi_tao_tk"));
+                hocVien.setMa_nguoi_tao_tk(rs.getInt("ma_nguoi_tao_hv"));
                 list.add(hocVien);
             }
             ps.close();
@@ -54,14 +55,16 @@ public class HocVienDAOImpl implements HocVienDAO {
       
 
             if (!isValidMaNguoiTaoTk((int)hocVien.getMa_nguoi_tao_tk())) {
-                throw new IllegalArgumentException("ma_nguoi_tao_tk không hợp lệ!"+hocVien.getMa_nguoi_tao_tk());
+                JOptionPane.showMessageDialog(null, "Mã người tạo học viên không hợp lệ: " + hocVien.getMa_nguoi_tao_tk(),
+                                  "Lỗi", JOptionPane.ERROR_MESSAGE);
+                
             }
 
-            String sql = "INSERT INTO hoc_vien(ma_hoc_vien, ho_ten, ngay_sinh, gioi_tinh, so_dien_thoai, dia_chi, tinh_trang, ma_nguoi_tao_tk) "
+            String sql = "INSERT INTO hoc_vien(ma_hoc_vien, ho_ten, ngay_sinh, gioi_tinh, so_dien_thoai, dia_chi, tinh_trang, ma_nguoi_tao_hv) "
                        + "VALUES(?, ?, ?, ?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE ho_ten = VALUES(ho_ten), "
                        + "ngay_sinh = VALUES(ngay_sinh), gioi_tinh = VALUES(gioi_tinh), "
                        + "so_dien_thoai = VALUES(so_dien_thoai), dia_chi = VALUES(dia_chi), "
-                       + "tinh_trang = VALUES(tinh_trang), ma_nguoi_tao_tk = VALUES(ma_nguoi_tao_tk)";
+                       + "tinh_trang = VALUES(tinh_trang), ma_nguoi_tao_hv = VALUES(ma_nguoi_tao_hv)";
 
             try (Connection cons = DBConnect.getConnection();
                  PreparedStatement ps = cons.prepareStatement(sql, PreparedStatement.RETURN_GENERATED_KEYS)) {
@@ -106,7 +109,7 @@ public class HocVienDAOImpl implements HocVienDAO {
                 hocVien.setNgay_sinh(rs.getDate("ngay_sinh"));
                 hocVien.setGioi_tinh(rs.getBoolean("gioi_tinh"));
                 hocVien.setTinh_trang(rs.getBoolean("tinh_trang"));
-                hocVien.setMa_nguoi_tao_tk( rs.getInt("ma_nguoi_tao_tk"));
+                hocVien.setMa_nguoi_tao_tk( rs.getInt("ma_nguoi_tao_hv"));
                 list.add(hocVien);
             }
             ps.close();

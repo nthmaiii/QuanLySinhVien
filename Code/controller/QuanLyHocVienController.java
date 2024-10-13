@@ -56,7 +56,7 @@ public class QuanLyHocVienController {
     private JTable table;
 
     private final String[] COLUMNS = {"Mã học viên", "STT", "Tên học viên", "Ngày sinh",
-        "Giới tính", "Số điện thoại", "Địa chỉ", "Trạng thái", "Mã người tạo TK"};
+        "Giới tính", "Số điện thoại", "Địa chỉ", "Trạng thái", "Mã người tạo"};
 
     private HocVienService hocVienService = null;
 
@@ -144,7 +144,7 @@ public class QuanLyHocVienController {
                     
                     
                     HocVienJFrame frame = new HocVienJFrame(hocVien);
-                    frame.setTitle("Thông tin học viên");
+                    frame.setTitle("Sửa thông tin học viên");
                     frame.setResizable(false);
                     frame.setLocationRelativeTo(null);
                     frame.setVisible(true);
@@ -256,12 +256,12 @@ public class QuanLyHocVienController {
 
             @Override
             public void mouseEntered(MouseEvent e) {
-                btnRefresh.setBackground(new Color(153,255,255));
+                btnRefresh.setBackground(new Color(51,102,255));
             }
 
             @Override
             public void mouseExited(MouseEvent e) {
-                btnRefresh.setBackground(new Color(153,255,255));
+                btnRefresh.setBackground(new Color(51,102,255));
             }
         });
        

@@ -123,7 +123,7 @@ public class HocVienJFrame extends javax.swing.JFrame {
         jtfMaNguoiTaoTK.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
 
         jLabel8.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jLabel8.setText("Mã người tạo TK:");
+        jLabel8.setText("Mã người tạo:");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);

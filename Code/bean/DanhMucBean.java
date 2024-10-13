@@ -3,6 +3,8 @@ package com.teamvietdev.qlhv.bean;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
+//Lớp DanhMucBean giúp tổ chức và quản lý dữ liệu hiệu quả, cải thiện khả năng bảo trì và
+//tái sử dụng mã. Nó cũng tạo điều kiện thuận lợi cho việc xử lý các sự kiện trong giao diện người dùng
 //Ho tro xu ly bat su kien khi nhan vao moi Lable
 public class DanhMucBean {
 

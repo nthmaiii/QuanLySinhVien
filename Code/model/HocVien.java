@@ -1,5 +1,8 @@
 package com.teamvietdev.qlhv.model;
-
+//Thể hiện dữ liệu và logic của ứng dụng.
+//Chứa logic và dữ liệu của ứng dụng.
+//Có thể bao gồm các lớp DAO (Data Access Object) để tương tác với cơ sở dữ liệu.
+//View: Giao diện người dùng, nơi mà thông tin được hiển thị.
 import java.io.Serializable;
 import java.sql.Date;
 
@@ -80,6 +83,10 @@ public class HocVien implements Serializable {
     @Override
     public String toString() {
         return ma_hoc_vien + " - " + ho_ten;
+    }
+
+    public boolean isKichHoat() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
    

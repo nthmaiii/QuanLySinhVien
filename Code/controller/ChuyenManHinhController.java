@@ -1,13 +1,14 @@
 package com.teamvietdev.qlhv.controller;
 
 import com.teamvietdev.qlhv.bean.DanhMucBean;
+import com.teamvietdev.qlhv.view.BaoLoiJPanel;
 import com.teamvietdev.qlhv.view.DangNhapJDialog;
 import com.teamvietdev.qlhv.view.HocVienJPanel;
+
 import com.teamvietdev.qlhv.view.KhoaHocJPanel;
 import com.teamvietdev.qlhv.view.MainJFrame;
 import com.teamvietdev.qlhv.view.TaoTKJPanel;
-import com.teamvietdev.qlhv.view.TaoTKJPanel;
-import com.teamvietdev.qlhv.view.ThongKeJPanel;
+import com.teamvietdev.qlhv.view.ThongKe2JPanel;
 import com.teamvietdev.qlhv.view.TrangChuJPanel;
 
 import javax.swing.JLabel;
@@ -15,12 +16,14 @@ import javax.swing.JPanel;
 import java.awt.Color;
 import java.awt.BorderLayout;
 import java.awt.Component;
+import java.awt.Dimension;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.util.List;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.SwingUtilities;
+//Nhận yêu cầu từ người dùng, xử lý nó và tương tác với model để cập nhật view.
 // Xu ly chuyen qua lao cac man hinh voi nhau
 public class ChuyenManHinhController {
     private final JPanel root;
@@ -84,21 +87,24 @@ public class ChuyenManHinhController {
                     node = new HocVienJPanel();
                     break;
                 case "KhoaHoc":
-                    node = new KhoaHocJPanel();
+                     node = new KhoaHocJPanel();
                     break;
                 case "ThongKe":   
                     if("admin".equals(frame.getTitle())){
-                        node = new ThongKeJPanel();
+                        node = new ThongKe2JPanel();
                         break;
                     }else{
-                        // node = new BaoLoiJPanel();
+                       
+                        node = new BaoLoiJPanel();
+                         // Dừng lại nếu không có quyền
                          // Hiển thị thông báo không có quyền truy cập
                         JOptionPane.showMessageDialog(null, 
                             "Nhân viên không có quyền truy cập vào tính năng này!", 
                             "Thông báo", 
                         JOptionPane.WARNING_MESSAGE);
-                        return ; // Dừng lại nếu không có quyền
+                         break; // Dừng lại nếu không có quyền
                     }
+                    
                     // more ...
                 case "TaoTK":
                     if("admin".equals(frame.getTitle())){
@@ -106,14 +112,14 @@ public class ChuyenManHinhController {
                         break;
                     }else{
                        
-                        //node = new BaoLoiJPanel();
+                        node = new BaoLoiJPanel();
                          // Dừng lại nếu không có quyền
                          // Hiển thị thông báo không có quyền truy cập
                         JOptionPane.showMessageDialog(null, 
                             "Nhân viên không có quyền truy cập vào tính năng này!", 
                             "Thông báo", 
                         JOptionPane.WARNING_MESSAGE);
-                         return; // Dừng lại nếu không có quyền
+                         break; // Dừng lại nếu không có quyền
                     }
                 case "Logout":
                     // Mở hộp thoại đăng nhập
@@ -125,6 +131,7 @@ public class ChuyenManHinhController {
                      loginDialog.setVisible(true);
                      
                      return; // Trả về để không thực hiện thêm các thao tác khác
+               
                 default:
                     node = new TrangChuJPanel();
                     break;
